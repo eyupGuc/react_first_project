@@ -1,20 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-// import App from './App';
-const App=()=>{
-    return (<> <h1>Hello World</h1>
-    <p>Merhaba</p> <Child/></>
-    )
-}
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const Child=()=><p>I am child</p>
+import App from "./App";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App/>
- 
-    // <App />
-  
-);
+//! index componenti ReactDOM.createRoot() metodu ile
+//! public klasorunde yer alan index.html icersindeki id'si root
+//! olan elemana erisir.
 
-
+//* render() metodu içerisinde App componenti cagrilir.
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
